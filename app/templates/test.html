@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Project 5 - Washington DC Data</title>
+        
+<!-- 
+
+Sentra Template
+
+https://templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="static/css/fontAwesome.css">
+        <link rel="stylesheet" href="static/css/light-box.css">
+        <link rel="stylesheet" href="static/css/owl-carousel.css">
+        <link rel="stylesheet" href="static/css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body>
+	<table >
+		<tr>
+			<td>
+				<form action="/graph" class="sidebar-navigation hidde-sm hidden-xs">
+					<h2 style="color:indianred">Graph 1:</h2>
+						<p>
+							<label for="x_var">X Variable:</label>
+							<select id="x_var" name="x_var">
+								<option value='Count of English Learner Students'>Count of English Learner Students</option>
+								<option value= 'Count of At Risk Students' >Count of At Risk Students</option>
+								<option value= 'Sum of Enrollment by Sector and Grade Band' >Sum Enrollment</option>
+							</select>
+						</p>
+						<p>
+							<label for="y_var">Y Variable:</label>
+							<select id="y_var" name="y_var">
+								<option value='Count of English Learner Students'>Count of English Learner Students</option>
+								<option value= 'Count of At Risk Students' >Count of At Risk Students</option>
+								<option value= 'Sum of Enrollment by Sector and Grade Band' >Sum Enrollment</option>
+								
+							</select>
+						</p>
+						<p>
+							<label for="hue">Color By:</label>
+							<select id="hue" name="hue">
+								<option value=1>Truancy Count</option>
+								<option value=2>Truancy Percent</option>
+								<option value=3>Graduates/Truancy</option>
+								<option value=4>Graduates</option>
+							</select>
+						</p>
+						<p>
+							<label for="year">Year:</label>
+							<select id="year" name="year">
+								<option value=2013>SY 2013-2014</option>
+								<option value=2014>SY 2014-2015</option>
+								<option value=2015>SY 2015-2016</option>
+								<option value=2016>SY 2016-2017</option>
+							</select>
+						</p>
+					<h2 style="color:indianred">Graph 2:</h2>
+						<p>
+							<label for="x_var2">X Variable:</label>
+							<select id="x_var2" name="x_var2">
+								<option value='Count of English Learner Students'>Count of English Learner Students</option>
+								<option value= 'Count of At Risk Students' >Count of At Risk Students</option>
+								<option value= 'Sum of Enrollment by Sector and Grade Band' >Sum Enrollment</option>
+							</select>
+						</p>
+						<p>
+							<label for="y_var2">Y Variable:</label>
+							<select id="y_var2" name="y_var2">
+								<option value='Count of English Learner Students'>Count of English Learner Students</option>
+								<option value= 'Count of At Risk Students' >Count of At Risk Students</option>
+								<option value= 'Sum of Enrollment by Sector and Grade Band' >Sum Enrollment</option>
+								
+							</select>
+						</p>
+						<p>
+							<label for="hue2">Color By:</label>
+							<select id="hue2" name="hue2">
+								<option value=1>Truancy Count</option>
+								<option value=2>Truancy Percent</option>
+								<option value=3>Graduates/Truancy</option>
+								<option value=4>Graduates</option>
+							</select>
+						</p>
+						<p>
+							<label for="year2">Year:</label>
+							<select id="year2" name="year2">
+								<option value=2013>SY 2013-2014</option>
+								<option value=2014>SY 2014-2015</option>
+								<option value=2015>SY 2015-2016</option>
+								<option value=2016>SY 2016-2017</option>
+							</select>
+						</p>
+						<p>
+							<label for="chorop_n">Choropleth Neighborhood Variable:</label>
+							<select id="chorop_n" name="chorop_n">
+								<option value='Count of At Risk Students'>Count of At Risk Students</option>
+								<option value='English Learner Students as  share of Neighborhood Cluster'>English Learner Students as  share of Neighborhood Cluster</option>
+								<option value='Sum of Total Enrollment (DCPS & PCS)'>Sum of Total Enrollment (DCPS & PCS)</option>
+							</select>
+						</p>
+					<p><button type="graph">Update Dashboard</button></p>
+				</form>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>	
+		<div class="content-section">
+				{{graph|safe}}
+
+
+				{{graph2|safe}}
+		</div>
+	<br>
+	<br>
+	<br>
+	<center>
+		{{graph_title}}
+	{% include "/map2.html" %}
+	<p><a href="/#app"><button type="home">Return</button></a></p>
+	</center>
+	
+</body>
+</html>
