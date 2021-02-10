@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Project 5 - Washington DC Data</title>
+        
+<!-- 
+
+Sentra Template
+
+https://templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="static/css/fontAwesome.css">
+        <link rel="stylesheet" href="static/css/light-box.css">
+        <link rel="stylesheet" href="static/css/owl-carousel.css">
+        <link rel="stylesheet" href="static/css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#proj_back">Project Background</a></li>
+                        <li><a href="#eda">EDA</a></li>
+                        <li><a href="#modeling">Modeling</a></li>
+                        <li><a href="#app">Interactive App</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#"><em>DSI113020</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#proj_back">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Project Background
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#eda">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            EDA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#modeling">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Modeling
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Interactive App
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bib">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Bibliography
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="#contact"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                            <h1 style="color:rgb(50, 252, 134)">Washington DC<br>School Performance Analysis</h1>
+                            <p></p>
+                            <div class="white-button button">
+                                <a href="#bib">Data Sources</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1 style="background-color:rgb(68, 68, 68); color:rgb(227, 203, 255)">School Performance Predictions</h1>
+                                                 
+                          <div class="white-button button">
+                              <a href="#modeling">Go to Predictions</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1 style="color:rgb(26, 129, 69)">Interactive Flask App</h1>
+                          
+                          <div class="white-button button">
+                              <a href="/test">Launch App</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <section id="proj_back" class="content-section">
+                <div class="section-heading">
+                    <h1><em>Project<br>Background</em></h1>
+                    <p>Problem Statement: 
+                    <br>Understand and predict the performance of Washington D.C. schools.</p>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="eda" class="content-section">
+                <div class="section-heading">
+                    <h1><em>EDA</em></h1>
+                    <p>Top Findings while Exploring Data 
+                    <br></p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/capacity_pct_filled_star_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>Percent Filled and Star Rating</h4>
+                                <p>Shows clearly defined separation of the high star value schools.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/count_star_rate_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>Star Count Distribution</h4>
+                                <p>Stars appear to be distributed somewhat normally.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/star_1_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>1 Star Absences Breakdown</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/star_2_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>2 Star Absences Breakdown</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/star_3_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>3 Star Absences Breakdown</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/star_4_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>4 Star Absences Breakdown</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="/static/img/star_5_SY1718.png" alt="">
+                            </div>
+                            <div class="text-content">
+                                <h4>5 Star Absences Breakdown</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="modeling" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1>Modeling<em><br>and Predictions</em></h1>
+                        </div>
+                        <div class="text-content">
+                            <p>CONTENT</p>
+                        </div>
+                        <div class="text-content">
+                            <p>CONTENT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="app" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                                <h1>Interactive <em>App</em></h1>
+                                <br>
+                        </div>
+                        <div class="text-content">
+                            <p>Please see our App Demo Below.</p>
+                        </div>
+                        <div class="item">
+                            <div class="col-ri-8">
+                                <p><a href="/test"><button type="home">Go to App</button></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="contact" class="content-section">
+                <div id="contact-content">
+                    <div class="section-content">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="static/img/john_b.jpeg" alt="">
+                                    <div class="featured-button button">
+                        
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <h4>John Bruscella</h4>
+                                    <span>Data Scientist</span>
+                                    <p><a href="https://www.linkedin.com/in/john-bruscella/">LinkedIn Profile</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="static/img/keith_k.jpeg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <h4>Keith Kruelskie</h4>
+                                    <span>Data Scientist</span>
+                                    <p><a href="https://www.linkedin.com/in/keithkruelskie/">LinkedIn Profile</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="static/img/rebecca_w.jpeg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <h4>Rebecca Wright</h4>
+                                    <span>Data Scientist</span>
+                                    <p><a href="https://www.linkedin.com/in/the-wright-data-geek/">LinkedIn Profile</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="bib" class="content-section">
+                <div class="section-heading">
+                    <h1><em>Bibliography<br>And Sources</em></h1>
+                    </div>
+                <div class="section-content">
+                        <div class="item">
+                            <div class="text-content">
+                                <h4>Data Sources:</h4>
+                                <span></span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="item">
+                            <div class="text-content">
+                                <h4><a href = "https://osse.dc.gov/sites/default/files/dc/sites/osse/page_content/attachments/STAR%20Framework%20At-A-Glance_vFinal.pdf">Star Calculations for DC Schools</a><br>
+                                </h4>
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <br>
+                            <div class="text-content">
+                                <a href ="https://edscape.dc.gov/"><h4>edscape</a> <br>
+                                </h4>
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <br>
+                            <div class="text-content">
+                                <a href ="https://data.world/codefordc/dc-neighborhood-cluster-demographics"><h4>DC Neighborhood Cluster Demographics</a> <br>
+                                </h4>
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <br>
+                            <div class="text-content">
+                                <a href ="https://data.world/codefordc/neighborhood-school-attendance-cluster-mapping"><h4>School Residential Cluster Data</a> <br>
+                                </h4>
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                </div>
+            </section>
+            <section class="footer">
+                <p>DSI Group 3 Project 5
+            </section>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 10;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+</html>
