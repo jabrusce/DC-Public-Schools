@@ -96,28 +96,6 @@ def home():
 #return hard-coded html
 name='Keith'
 
-@app.route("/hc_page")
-def hc_page():
-    return f"""
-        <html>
-            <body>
-                <h1>This is a hard coded page</h1>
-                <p>Here's the text! {name}, isn't this cool?</p>
-            </body>
-        </html>
-    """
-
-#3rd Route: Return some data in json format
-#using jsonify function
-@app.route("/hc_page.json")
-def json_data():
-    favs = {
-        'movie': 'Inception',
-        'band': 'Glass Animals',
-        'song': 'Tokyo Drifting'
-    }
-    return jsonify(favs), 200
-
 #Route 4: show user a form
 @app.route("/form")
 def form():
