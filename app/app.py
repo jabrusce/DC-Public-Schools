@@ -21,11 +21,11 @@ matplotlib.use('Agg')
 app = Flask('myApp')
 
 #Read in our Dataframe:
-df = pd.read_csv('./data/cluster_student_counts.csv')
-df['Count of English Learner Students'] = pd.to_numeric(df['Count of English Learner Students'], errors = 'coerce').fillna(value = 0)
-df['English Learner Students as  share of Neighborhood Cluster'] = pd.to_numeric(df['English Learner Students as  share of Neighborhood Cluster'], errors = 'coerce').fillna(value = 0)
-df['Count of Special Education Students'] = pd.to_numeric(df['Count of Special Education Students'], errors = 'coerce').fillna(value = 0)
-df['Special Education Students as share of Neighborhood Cluster'] = pd.to_numeric(df['Special Education Students as share of Neighborhood Cluster'], errors = 'coerce').fillna(value = 0)
+df = pd.read_csv('./data/cluster_map.csv')
+#df['Count of English Learner Students'] = pd.to_numeric(df['Count of English Learner Students'], errors = 'coerce').fillna(value = 0)
+#df['English Learner Students as  share of Neighborhood Cluster'] = pd.to_numeric(df['English Learner Students as  share of Neighborhood Cluster'], errors = 'coerce').fillna(value = 0)
+#df['Count of Special Education Students'] = pd.to_numeric(df['Count of Special Education Students'], errors = 'coerce').fillna(value = 0)
+#df['Special Education Students as share of Neighborhood Cluster'] = pd.to_numeric(df['Special Education Students as share of Neighborhood Cluster'], errors = 'coerce').fillna(value = 0)
 
 school_df = pd.read_csv('./data/school_df_v1.csv')
 
@@ -109,8 +109,8 @@ def make_graph():
 
     x = user_input['x_var']
     y = user_input['y_var']
-    plot_hue = user_input['hue']
-    plot_yr =user_input['year']
+    #plot_hue = user_input['hue']
+    #plot_yr =user_input['year']
 
 
     f = plt.figure()
@@ -134,13 +134,13 @@ def graph():
 
     x = user_input['x_var']
     y = user_input['y_var']
-    plot_hue = user_input['hue']
-    plot_yr =user_input['year']
+    #plot_hue = user_input['hue']
+    #plot_yr =user_input['year']
 
     x2 = user_input['x_var2']
     y2 = user_input['y_var2']
-    plot_hue2 = user_input['hue2']
-    plot_yr2 =user_input['year2']
+    #plot_hue2 = user_input['hue2']
+    #plot_yr2 =user_input['year2']
 
     chorop_n = user_input['chorop_n']
     #choro_w = user_input['chorop_w']
@@ -160,7 +160,7 @@ def graph():
     plt.title(x2 + ' vs '+ y2)
 
     #Choropleth:
-    m = folium.Map(width = 450, height=450, location = [38.9, -77], zoom_start=10.5)
+    m = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     folium.GeoJson(neighbs_data).add_to(neighborhood_layer)
@@ -187,7 +187,7 @@ def graph():
     #second Map:
     #Defining our Map:
     
-    m2 = folium.Map(width = 450, height=450, location = [38.9, -77], zoom_start=10.5)
+    m2 = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     
