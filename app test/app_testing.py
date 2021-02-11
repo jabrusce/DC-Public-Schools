@@ -160,7 +160,7 @@ def graph():
     plt.title(x2 + ' vs '+ y2)
 
     #Choropleth:
-    m = folium.Map(width = 450, height=450, location = [38.9, -77], zoom_start=10.5)
+    m = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     folium.GeoJson(neighbs_data).add_to(neighborhood_layer)
@@ -187,7 +187,7 @@ def graph():
     #second Map:
     #Defining our Map:
     
-    m2 = folium.Map(width = 450, height=450, location = [38.9, -77], zoom_start=10.5)
+    m2 = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     
