@@ -1,6 +1,5 @@
 from flask import Flask, Response, request, jsonify, render_template
 import numpy as np
-import pickle
 #MPLD3 lets us make an html of a matplotlib plot:
 import matplotlib.pyplot as plt, mpld3
 import seaborn as sns
@@ -160,7 +159,7 @@ def graph():
     plt.title(x2 + ' vs '+ y2)
 
     #Choropleth:
-    m = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
+    m = folium.Map(width = 750, height=750, location = [38.9, -77], zoom_start=10.0)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     folium.GeoJson(neighbs_data).add_to(neighborhood_layer)
@@ -187,7 +186,7 @@ def graph():
     #second Map:
     #Defining our Map:
     
-    m2 = folium.Map(width = 1000, height=1000, location = [38.9, -77], zoom_start=10.5)
+    m2 = folium.Map(width = 750, height=750, location = [38.9, -77], zoom_start=10.5)
     #Adding a neighborhood layer:
     neighborhood_layer = folium.FeatureGroup(name='Neighborhoods', show=False, )
     
