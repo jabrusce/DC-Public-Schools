@@ -1,4 +1,4 @@
-<h1 align = 'center'>Project 5: Washington, DC Public Schools</h1>
+<h1 align = 'center'>Washington, DC Public Schools</h1>
 <h4 align = 'center'>AUTHORS</h4>
 <center>John Bruscella, Keith Kruelskie, Rebecca Wright</center>
 
