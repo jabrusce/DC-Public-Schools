@@ -215,13 +215,13 @@ Schools that serve exclusively adults, exclusively students in grades PK3 thru g
 side, at the user's discretion along with an interactive choropleth overlay on the D.C.
 region.
 <br>
-> The app was developed in Flask, and runs on a local server activated by the app.py file.
+>The app was developed in Flask, and runs on a local server activated by the app.py file.
 The app.py file draws its data from the school_df_v6.csv and cluster_map.csv file to 
 populate the graphs and choropleth. Once a user has navigated to the app, a number of drop
 downs control what each graph shows, and another dropdown controls the overlay on the D.C.
 metro area.
 <br>
-> Clicking Update Dashboard refreshes the page with the new graphs and maps.
+>Clicking Update Dashboard refreshes the page with the new graphs and maps.
 Future app integrations might include additional tooltips and data on the schools that 
 populate on the map, and perhaps an interactive layer to allow for selection of
 neighborhood clusters to look at data about the cluster in detail.
